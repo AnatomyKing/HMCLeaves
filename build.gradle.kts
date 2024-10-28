@@ -36,13 +36,14 @@ repositories {
     maven("https://oss.sonatype.org/content/repositories/central")
     maven("https://jitpack.io")
     maven("https://maven.enginehub.org/repo/")
-    maven("https://repo.codemc.io/repository/maven-snapshots/")
+    maven("https://repo.codemc.io/repository/maven-releases/")
     maven("https://mvn.lumine.io/repository/maven-public/") { metadataSources { artifact() } }
     maven("https://repo.xenondevs.xyz/releases")
     maven("https://repo.hibiscusmc.com/snapshots")
 }
 
 dependencies {
+    implementation(project(path = ":v1_20_3", configuration = "reobf"))
     implementation(project(path = ":v1_20", configuration = "reobf"))
     implementation(project(path = ":v1_19", configuration = "reobf"))
     implementation(project(path = ":v1_19_3", configuration = "reobf"))

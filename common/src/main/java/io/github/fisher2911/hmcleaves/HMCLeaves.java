@@ -78,15 +78,15 @@ public class HMCLeaves extends JavaPlugin {
                 this.createFeatureHandler("v1_18_2");
             } else if (version.contains("1.18")) {
                 this.createFeatureHandler("v1_18");
-            }
-            if (version.contains("1.19.4")) {
+            } else if (version.contains("1.19.4")) {
                 this.createFeatureHandler("v1_19_4");
             } else if (version.contains("1.19.3")) {
                 this.createFeatureHandler("v1_19_3");
             } else if (version.contains("1.19")) {
                 this.createFeatureHandler("v1_19");
-            }
-            if (version.contains("1.20")) {
+            } else if (version.contains("1.20.3") || version.contains("1.20.4")) {
+                this.createFeatureHandler("v1_20_3");
+            } else if (version.contains("1.20")) {
                 this.createFeatureHandler("v1_20");
             }
         } catch (Exception e) {

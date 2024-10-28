@@ -16,9 +16,10 @@ repositories {
     maven("https://oss.sonatype.org/content/repositories/central")
     maven("https://jitpack.io")
     maven("https://maven.enginehub.org/repo/")
-    maven("https://repo.codemc.io/repository/maven-snapshots/")
+    maven("https://repo.codemc.io/repository/maven-releases/")
     maven("https://mvn.lumine.io/repository/maven-public/") { metadataSources { artifact() } }
     maven("https://repo.xenondevs.xyz/releases")
+    maven("https://repo.hibiscusmc.com/snapshots")
 }
 
 dependencies {

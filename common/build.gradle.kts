@@ -32,7 +32,7 @@ repositories {
     maven("https://oss.sonatype.org/content/repositories/central")
     maven("https://jitpack.io")
     maven("https://maven.enginehub.org/repo/")
-    maven("https://repo.codemc.io/repository/maven-snapshots/")
+    maven("https://repo.codemc.io/repository/maven-releases/")
     maven("https://mvn.lumine.io/repository/maven-public/") { metadataSources { artifact() } }
     maven("https://repo.xenondevs.xyz/releases")
     maven("https://repo.hibiscusmc.com/snapshots")
@@ -40,9 +40,9 @@ repositories {
 
 dependencies {
     compileOnly("org.spigotmc:spigot-api:1.18.1-R0.1-SNAPSHOT")
-    compileOnly("com.github.oraxen:oraxen:1.159.0")
+    compileOnly("com.github.oraxen:oraxen:1.173.0")
     compileOnly("com.github.LoneDev6:api-itemsadder:3.0.0")
-    compileOnly("org.xerial:sqlite-jdbc:3.39.2.0")
+    compileOnly("org.xerial:sqlite-jdbc:3.41.2.2")
     compileOnly("com.sk89q.worldedit:worldedit-core:7.2.14-SNAPSHOT")
     compileOnly("com.sk89q.worldedit:worldedit-bukkit:7.2.14-SNAPSHOT")
     compileOnly("io.lumine:MythicCrucible:1.6.0-SNAPSHOT")
@@ -51,6 +51,6 @@ dependencies {
     implementation("com.zaxxer:HikariCP:3.3.0")
     implementation("org.bstats:bstats-bukkit:3.0.0")
     implementation(platform("com.intellectualsites.bom:bom-1.18.x:1.19"))
-    implementation("com.github.retrooper.packetevents:spigot:2.0.2")
+    implementation("com.github.retrooper:packetevents-spigot:2.5.0")
     implementation("io.github.fisher2911.FisherLib:common:1.0.3-beta")
 }
